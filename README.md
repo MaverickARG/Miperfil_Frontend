@@ -3,7 +3,8 @@ Práctica Formativa 1 - Portafolio Personal
 Este es mi primer trabajo práctico para la materia de Desarrollo Front End. 
 La idea fue armar una página tipo portafolio para presentar mi perfil técnico y aplicar lo que vimos en estas primeras semanas sobre HTML y CSS.
 
-Link a mi sitio: [PEGAR ACÁ TU LINK DE GITHUB PAGES O VERCEL]
+Link a mi sitio: https://maverickarg.github.io/Miperfil_Frontend/
+Link de repo en Git: https://github.com/MaverickARG/Miperfil_Frontend.git
 
 
 

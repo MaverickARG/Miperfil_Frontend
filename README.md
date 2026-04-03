@@ -25,7 +25,7 @@ Uso de Google Fonts
 [x] Enlace a Google Fonts en el "head" del HTML.
 [x] La tipografía se aplica correctamente en toda la página.
 ¿Por qué elegí esta fuente?**
-Respuesta: Elegí Roboto porqye es de las mas usadas en paginas web
+Respuesta: Elegí Roboto porqye es de las mas usadas para diseño web y la verdad queda muy bien
 
 *HTML
 [x] Uso de DOCTYPE y lang="es".
@@ -39,7 +39,7 @@ Respuesta: Elegí Roboto porqye es de las mas usadas en paginas web
 [x] Estilos personalizados usando clases e identificadores.
 [x] Layout organizado con Flexbox y Grid.
 ¿Qué ventajas encontré al usar Flexbox o Grid?**
-Respuesta: Me facilitó mucho el trabajo para alinear la imagen al lado del texto sin que se rompa el diseño. También sirvió para que las tarjetas de mis pasatiempos y las películas queden bien distribuidas y centradas.
+Respuesta: Me facilitó mucho el trabajo para alinear la imagen al lado del texto sin que se rompa el diseño. También sirvió para que las tarjetas de mis pasatiempos y las películas queden centradas
 [x] Estilos para la tabla, botones del formulario y el menú.
 [x] Uso de unidades relativas (rem y %) para que sea responsivo.
 [x] Animación de transición (efecto hover) en las tarjetas y botones.

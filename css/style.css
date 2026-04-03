@@ -1,0 +1,220 @@
+/* 1. Reset y Variables */
+:root {
+    --principal: #1a3a5a;
+    --acento: #3498db;
+    --fondo: #f4f7f6;
+    --blanco: #ffffff;
+    --texto: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Requerimiento Google Fonts [cite: 25-27, 40] */
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* 2. Navegación [cite: 45-47, 129] */
+header {
+    background: var(--principal);
+    color: white;
+    padding: 1rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 3. Secciones y Contenedores [cite: 13, 147] */
+.container {
+    padding: 4rem 10%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.dark-bg {
+    background-color: #e9ecef;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--principal);
+}
+
+/* 4. Sobre Mí (Flexbox) [cite: 50-52, 170] */
+.sobre-mi-contenido {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Para que en móvil la imagen suba [cite: 76] */
+}
+
+.img-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--acento);
+    object-fit: cover;
+}
+
+.sobre-mi-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* 5. Tarjetas (Flexbox) [cite: 53-55, 142] */
+.contenedor-tarjetas {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background: var(--blanco);
+    padding: 2rem;
+    border-radius: 12px;
+    width: 320px;
+    
+    /* ESTO CENTRA EL CONTENIDO INTERNO */
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* Transición obligatoria [cite: 80-81, 152] */
+}
+
+.tarjeta img {
+    max-width: 150px; /* O el tamaño que prefieras */
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+/* 6. Tabla y Formulario [cite: 56-58, 60-61, 78] */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: var(--acento);
+    color: white;
+}
+
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: var(--acento);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: var(--principal);
+}
+
+/* 7. Películas (Grid de 4 columnas) [cite: 62-64, 174] */
+.lista-peliculas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas fijas en pantalla grande [cite: 75] */
+    gap: 1.5rem;
+}
+
+.pelicula-item {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.pelicula-item img {
+    width: 100%; /* Unidad relativa [cite: 76, 147] */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* 8. Footer [cite: 65-66] */
+footer {
+    background: var(--principal);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+/* 9. Responsividad (Media Queries) [cite: 36-37, 156] */
+@media (max-width: 1024px) {
+    .lista-peliculas {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-mi-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    .lista-peliculas {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+    .container {
+        padding: 2rem 5%;
+    }
+}

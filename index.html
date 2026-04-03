@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal - IFTS 29</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portafolio de IT & Desarrollo</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#tarjetas">Metas</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi" class="container">
+            <div class="sobre-mi-contenido">
+                <img src="img/perfil.png" alt="Este soy yo" class="img-perfil">
+                <div class="sobre-mi-texto">
+                    <h2>Presentación Personal</h2>
+                    <p>
+                        Con más de 15 años de trayectoria en el sector tecnológico, me he especializado en la gestión técnica de hardware 
+                        y software para servidores y centros de datos de alta disponibilidad. Mi pasión por la innovación me ha impulsado 
+                        a dar el siguiente paso en mi carrera: integrar mi sólida base en infraestructura con el desarrollo de software 
+                        para crear soluciones integrales y eficientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tarjetas" class="container dark-bg">
+            <h2 class="section-title">Pasatiempos y Metas</h2>
+            <div class="contenedor-tarjetas">
+                <article class="tarjeta">
+                    <img src="img/deportes.png" alt="Mis pasatiempos" width="100">
+                    <h3>Pasatiempos</h3>
+                    
+                    <p>Practivo Voley amateur y disfruto mucho mirar futbol</p>
+                </article>
+                <article class="tarjeta">
+                    <img src="img/metas.png" alt="Cruzando la meta" width="100">
+                    <h3>Metas</h3>
+                    <p></p>
+                    <p>Mi meta principal es terminar la tecnicatura y ampliar mis conocimientos en programación.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="habilidades" class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología / Capacidad</th>
+                        <th>Nivel de Experiencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Administración de Servidores</td>
+                        <td>Senior (15+ años)</td>
+                    </tr>
+                    <tr>
+                        <td>Hardware & Data Centers</td>
+                        <td>Experto</td>
+                    </tr>
+                    <tr>
+                        <td>Soporte Tecnico </td>
+                        <td>Avanzado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto" class="container">
+            <h2 class="section-title">Contacto</h2>
+            <form action="#">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="tel">Teléfono:</label>
+                    <input type="tel" id="tel" name="tel">
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <section id="peliculas" class="container dark-bg">
+            <h2 class="section-title">Mis Películas Favoritas</h2>
+            <div class="lista-peliculas">
+                <article class="pelicula-item">
+                    <h3>Top Gun</h3>
+                    <img src="img/topgun.png" alt="Top Gun 🛩️" width="150">
+                </article>
+                <article class="pelicula-item">
+                    <h3>Jerry Maguire</h3>
+                    <img src="img/jerry.png" alt="Muestrame el dineroooo 💰" width="150">
+                </article>
+                <article class="pelicula-item">
+                    <h3>Forrest Gump</h3>
+                    <img src="img/forrest.png" alt="Corre Forrest 🏃‍♂️ " width="150">
+                </article>
+                <article class="pelicula-item">
+                    <h3>Hombre en llamas</h3>
+                    <img src="img/llamas.png" alt="Una palabra no dice nada..." width="150">
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Trabajo Práctico Individual IFTS N°29</p>
+    </footer>
+
+</body>
+</html>
